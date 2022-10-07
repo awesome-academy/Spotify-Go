@@ -10,4 +10,5 @@ target 'SpotifyGo' do
 	pod 'RxCocoa'
 	pod 'Alamofire'
 	pod 'SDWebImage', '5.12.6'
+  pod 'ObjectMapper'
 end

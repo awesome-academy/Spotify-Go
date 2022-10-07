@@ -17,9 +17,16 @@ struct AppNavigator: AppNavigatorType {
 
     func toMain() {
         let nav = UINavigationController()
+        guard UserDefaults.standard.string(forKey: "token") != nil else {
+            let authView: AuthViewController = assembler.resolve(navigationController: nav)
+            nav.setViewControllers([authView], animated: false)
+            window.rootViewController = nav
+            window.makeKeyAndVisible()
+            return
+        }
         let tabbar: TabbarViewController = assembler.resolve(navigationController: nav)
-        tabbar.view.backgroundColor = .red
-        window.rootViewController = tabbar
+        nav.setViewControllers([tabbar], animated: false)
+        window.rootViewController = nav
         window.makeKeyAndVisible()
     }
 }

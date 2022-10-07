@@ -19,14 +19,17 @@ extension TabbarAssembler {
         let tabbar = TabbarViewController()
         let navigator: TabbarNavigatorType = resolve(navigationController: navigationController)
         let HomeNav = UINavigationController()
+        HomeNav.navigationBar.isHidden = true
         HomeNav.tabBarItem = TabbarItem.home.item
         navigator.loadHome(navigationController: HomeNav)
 
         let searchNav = UINavigationController()
+        searchNav.navigationBar.isHidden = true
         searchNav.tabBarItem = TabbarItem.search.item
         navigator.loadSearch(navigationController: searchNav)
 
         let libraryNav = UINavigationController()
+        libraryNav.navigationBar.isHidden = true
         libraryNav.tabBarItem = TabbarItem.library.item
         navigator.loadLibrary(navigationController: libraryNav)
         

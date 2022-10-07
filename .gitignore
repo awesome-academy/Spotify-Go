@@ -88,4 +88,5 @@ fastlane/test_output
 
 iOSInjectionProject/
 CryptoTracker/CryptoTracker/Resources/Key.plist
+SpotifyGo/Resources/APIKey.swift
 Pods

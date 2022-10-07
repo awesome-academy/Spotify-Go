@@ -16,7 +16,6 @@ final class LibraryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 }
 extension LibraryViewController: Bindable {
     func bindViewModel() {

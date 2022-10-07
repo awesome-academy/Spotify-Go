@@ -20,6 +20,7 @@ final class HomeViewController: UIViewController {
 
 extension HomeViewController: Bindable {
     func bindViewModel() {
+        
     }
 }
 

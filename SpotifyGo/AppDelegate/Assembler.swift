@@ -12,7 +12,8 @@ protocol Assembler: AnyObject,
                     TabbarAssembler,
                     HomeAssembler,
                     SearchAssembler,
-                    LibraryAssembler {
+                    LibraryAssembler,
+                    AuthAssembler {
 }
 
 final class DefaultAssembler: Assembler {
