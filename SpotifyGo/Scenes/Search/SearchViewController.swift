@@ -12,6 +12,7 @@ import RxCocoa
 final class SearchViewController: UIViewController {
     var viewModel: SearchViewModel!
     var disposeBag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
